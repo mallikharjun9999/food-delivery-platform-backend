@@ -4,6 +4,7 @@ const addAddress = async (req, res) => {
   try {
     const userId = req.user?.userId;
     const address = req.body;
+    console.log('Adding address for user:', userId, 'Address:', address);
     const id = await addressModel.addAddress(userId, address);
     res.status(201).json({ message: 'Address added', addressId: id });
   } catch (err) {
