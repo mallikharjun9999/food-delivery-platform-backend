@@ -33,7 +33,7 @@ npm install
 node src/config/init.mjs
 
 # Start development server
-npm run dev
+node ./src/app.js
 ```
 
 The server will start on `http://localhost:3000`
